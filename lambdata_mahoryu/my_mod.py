@@ -7,7 +7,7 @@ def enlarge(n):
 if __name__ == "__main__":
     # only if run from the command line, invoke the following,
     # otherwise don't
-    
+
     print("JUNK")
     print("GLOBAL SCOPE")
 
