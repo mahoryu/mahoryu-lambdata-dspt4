@@ -3,6 +3,12 @@
 import pandas as pd
 
 def enlarge(n):
+    
+    '''
+    Multiplies a number by 100
+    :param n: (numeric) the number to enlarge
+    :return: the enlarged number (numeric)
+    '''
     return n * 100
 
 def split_date(X, date_column):
