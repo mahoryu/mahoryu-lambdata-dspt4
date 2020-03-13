@@ -3,12 +3,11 @@
 import pandas as pd
 
 def enlarge(n):
-    
-    '''
+    """
     Multiplies a number by 100
     :param n: (numeric) the number to enlarge
     :return: the enlarged number (numeric)
-    '''
+    """
     return n * 100
 
 def split_date(X, date_column):
@@ -20,10 +19,12 @@ def split_date(X, date_column):
     X = X.drop(columns=date_column)
     return X
 
+
 def double_data(X):
     X.copy()
     X = X.append(X, ignore_index=True)
     return X
+
 
 if __name__ == "__main__":
     # only if run from the command line, invoke the following,
