@@ -6,10 +6,10 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="mahoryu-lambdata-dspt4",
+    name="lambdata_mahoryu",
     version="1.0",
-    author="MJ Rossetti",
-    author_email="datacreativellc@gmail.com",
+    author="Ethan Holden",
+    author_email="mahoryu@gmail.com",
     description="For example purposes",
     long_description=long_description,
     long_description_content_type="text/markdown", # required if using a md file for long desc
