@@ -12,7 +12,6 @@ class Team():
     def full_name(self):
         print(f"{self.city} {self.name}")
 
-
 class BaseballTeam(Team):
     def __init__(self, name, city, players="Player 1", starting_pitcher="PITCHER"):
         super().__init__(name, city, players)
