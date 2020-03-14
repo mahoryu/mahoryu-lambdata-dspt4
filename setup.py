@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="lambdata_mahoryu",
-    version="1.0",
+    version="1.2",
     author="Ethan Holden",
     author_email="mahoryu@gmail.com",
     description="For example purposes",

@@ -1,5 +1,6 @@
 # example teams.py (OOP approach)
 
+
 class Team():
     def __init__(self, name, city, players="Player 1"):
         self.name = name
@@ -12,8 +13,10 @@ class Team():
     def full_name(self):
         print(f"{self.city} {self.name}")
 
+
 class BaseballTeam(Team):
-    def __init__(self, name, city, players="Player 1", starting_pitcher="PITCHER"):
+    def __init__(self, name, city, players="Player 1",
+                 starting_pitcher="PITCHER"):
         super().__init__(name, city, players)
         self.starting_pitcher = starting_pitcher
 
@@ -23,7 +26,7 @@ class BaseballTeam(Team):
 
 if __name__ == "__main__":
 
-    football_team = Team("Cowboys","Dallas")
+    football_team = Team("Cowboys", "Dallas")
     football_team.full_name()
 
     teams = [
@@ -34,7 +37,9 @@ if __name__ == "__main__":
         {"city": "Washington", "name": "Nationals", "pitcher": "Cody"}
     ]
     for team_atributes in teams:
-        team = BaseballTeam(name=team_atributes["name"], city=team_atributes["city"], starting_pitcher=team_atributes["pitcher"])
+        team = BaseballTeam(name=team_atributes["name"],
+                            city=team_atributes["city"],
+                            starting_pitcher=team_atributes["pitcher"])
         print("-------")
         # print(full_name(team))
         # advertise(team)
