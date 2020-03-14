@@ -11,6 +11,12 @@ def enlarge(n):
     return n * 100
 
 def split_date(X, date_column):
+    """
+    Splits the date column of a data frame into month, day, and year
+    :param X: (DataFrame) the data frame itself
+    :param date_column: (string) the name of the column that needs to be split.
+    :return: (DataFrame) the new data frame with the new columns replacing the old.
+    """
     X.copy()
     X[date_column] = pd.to_datetime(X[date_column])
     X['Month'] = X[date_column].dt.month
@@ -21,6 +27,11 @@ def split_date(X, date_column):
 
 
 def double_data(X):
+    """
+    Doubles the data in the data frame
+    :param X: (DataFrame) the data frame that you want to double
+    :return: (DataFrame) the new data frame with all values added as new rows.
+    """
     X.copy()
     X = X.append(X, ignore_index=True)
     return X
