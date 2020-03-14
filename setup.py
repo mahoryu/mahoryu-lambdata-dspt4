@@ -12,9 +12,10 @@ setup(
     author_email="mahoryu@gmail.com",
     description="For example purposes",
     long_description=long_description,
-    long_description_content_type="text/markdown", # required if using a md file for long desc
-    #license="MIT",
+    # required if using a md file for long desc
+    long_description_content_type="text/markdown",
+    # license="MIT",
     url="https://github.com/mahoryu/mahoryu-lambdata-dspt4",
-    #keywords="",
-    packages=find_packages() # ["my_lambdata"]
+    # keywords="",
+    packages=find_packages()  # ["my_lambdata"]
 )
