@@ -124,7 +124,7 @@ class CustomFrame(pd.DataFrame):
             "NY": "New York",
             "WA": "Washington",
         }
-        self["State Names"] = self["abbrev"].map(names_map)
+        self["State_Names"] = self["abbrev"].map(names_map)
 
 if __name__ == "__main__":
 
