@@ -12,8 +12,8 @@ class TestCustomFrameMethods(unittest.TestCase):
         custom_df.add_state_names()
         self.assertTrue("State_Names" in list(custom_df))
         # assert that first row, name is "California" in df
-        self.assertEqual((custom_df["State_Names"][0], "California"))
-        self.assertEqual((custom_df["abbrev"][0], "CA"))
+        self.assertEqual(custom_df["State_Names"][0], "California")
+        self.assertEqual(custom_df["abbrev"][0], "CA")
 
 if __name__ == '__main__':
     unittest.main()
