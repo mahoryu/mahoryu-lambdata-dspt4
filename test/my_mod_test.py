@@ -1,4 +1,4 @@
-# test/my_mod.py
+# test/my_mod_test.py
 
 import unittest
 from lambdata_mahoryu.my_mod import enlarge
