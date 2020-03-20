@@ -38,10 +38,19 @@ def double_data(X):
     X = X.append(X, ignore_index=True)
     return X
 
+
 if __name__ == "__main__":
+    print("Happy Tuesday Night")
 
-    df = pd.DataFrame({"abbrev":["CA","CT","CO","TX","DC"]})
-    print(df.head())
+    df = pd.DataFrame({"x": [1, 2, 3, 5], "y": [4, 5, 6, 8], "date": [
+        "1/2/2018", "6/7/2019", "2/8/2007", "2/8/2007"]})
+    print(df.shape[0])
 
-    df2 = pd.DataFrame({"abbrev": ["OH", "MI", "ID", "NY", "WA"]})
-    print(df2.head())
+    x = 5
+    print("ENLARGED", x, "TO", enlarge(x))
+
+    print()
+    print(split_date(df, "date"))
+
+    print()
+    print(double_data(df))

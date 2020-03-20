@@ -2,6 +2,8 @@
 
 
 from lambdata_mahoryu.assignment import CustomFrame
+
+
 def test_add_state_names():
     custom_df = CustomFrame({"abbrev": ["CA", "CT", "CO", "TX", "DC"]})
     # assert "State_Names" should be a column

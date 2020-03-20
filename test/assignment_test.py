@@ -3,6 +3,7 @@
 import unittest
 from lambdata_mahoryu.assignment import CustomFrame
 
+
 class TestCustomFrameMethods(unittest.TestCase):
 
     def test_add_state_names(self):
@@ -14,6 +15,7 @@ class TestCustomFrameMethods(unittest.TestCase):
         # assert that first row, name is "California" in df
         self.assertEqual(custom_df["State_Names"][0], "California")
         self.assertEqual(custom_df["abbrev"][0], "CA")
+
 
 if __name__ == '__main__':
     unittest.main()
